@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" href="#" type="image/x-icon">
+  <title id="label_title">Game</title>
+</head>
+<body>
+  <div id="game">
+    <div id="board"></div>
+    <div id="winner">
+      <div id="label_congra"><span>Congratulations</span></div>
+    </div>
+    <div id="show-back" class="center-column" style="margin-top: 20px;">
+      <div id="info">
+        <span id="label_time">Time:</span><span id="label_real_time">00:00:00</span>
+        <span id="label_movements">Moves: </span><span id="label_real_movments">0</span>
+      </div>
+      <button onclick="boardGame.back(false)" class="btn" id="exit-game">Back</button>
+      <button onclick="boardGame.pause()" class="btn" id="pause-game">Pause</button>
+    </div>
+    <div id="controls">
+      <div><button id="label_restart_2" onclick="boardGame.restart(2)" class="btn">2x2</button></div>
+      <div><button id="label_restart_3" onclick="boardGame.restart(3)" class="btn">3x3</button></div>
+      <div><button id="label_restart_4" onclick="boardGame.restart(4)" class="btn">4x4</button></div>
+      <div><button id="label_restart_5" onclick="boardGame.restart(5)" class="btn">5x5</button></div>
+      <div><button id="label_restart_6" onclick="boardGame.restart(6)" class="btn">6x6</button></div>
+      <div><button id="label_restart_7" onclick="boardGame.restart(7)" class="btn">7x7</button></div>
+      <div><button id="label_restart_8" onclick="boardGame.restart(8)" class="btn">8x8</button></div>
+    </div>
+  </div>
+  <script src="js/lang.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

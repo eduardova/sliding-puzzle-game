@@ -1,0 +1,123 @@
+#game, .center-column {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#board {
+  display: grid;
+  border: 1px solid;
+  width: 70%;
+}
+
+#controls {
+  width: 30%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+span.cell {
+  user-select: none;
+  cursor: pointer;
+  margin: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background-color: #f9e7d7;
+  color: #8c6868;
+  border: 4px solid #b79271;
+}
+
+#winner {
+  background-color: #8e4545;
+  padding: 10px;
+  color: #f9e7d7;
+  border: 5px double black;
+  box-shadow: 5px 5px 11px black;
+  font-weight: bold;
+  position: absolute;
+  margin-left: -23%;
+  justify-content: center;
+}
+
+.btn {
+  background-color: #8e4545;
+  font-size: 2.4rem;
+  border-radius: 20px;
+  color: #fbf2eb;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+.btn:disabled {
+  background-color: #ccc;
+  color: rgb(129, 127, 127);
+}
+
+.btn:hover {
+  font-size: 2.6rem;
+}
+
+#controls div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 65px;
+}
+
+#info {
+  font-size: 1.1rem;
+}
+
+#info span {
+  margin-right: 3px;
+}
+
+#label_real_time + span {
+  margin-left: 10px;
+}
+
+
+#show-back {
+  min-width: 130px;
+  flex-flow: column;
+  min-height: 150px;
+}
+
+#label_congra {
+  font-size: 7rem;
+}
+
+@media (max-width: 1000px) {
+  #game {
+    display: grid;
+    justify-content: unset;
+  }
+
+  #winner {
+    width: 84%;
+    margin-bottom: 45%;
+    margin-left: 2%;
+  }
+
+  #label_congra {
+    display: grid;
+    justify-content: center;
+  }
+
+  #controls {
+    width: 100%;
+    display: flex;
+    flex-flow: column-reverse;
+  }
+
+  #board {
+    width: 100%;
+  }
+
+  .btn {
+    font-size: 1.8rem;
+  }
+}
