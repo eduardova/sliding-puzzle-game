@@ -35,13 +35,13 @@ let boardGame = function(){
   let start;
 
   function restartTime(){
-    hrs = min = seg = 0;
+    let hrs = min = seg = 0;
     return setInterval(() => {
-      if(!paused){
+      if(!paused) {
         seg++;
-        if(seg > 59){
+        if(seg > 59) {
           min++;
-          if(min < 59){
+          if(min > 59) {
             hrs++;
             min = 0;
           }
