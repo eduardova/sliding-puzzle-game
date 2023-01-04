@@ -1,4 +1,6 @@
-#game, .center-column {
+
+#game,
+.center-column {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -19,6 +21,9 @@
 
 span.cell {
   user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
   cursor: pointer;
   margin: 1px;
   display: flex;
@@ -49,6 +54,9 @@ span.cell {
   color: #fbf2eb;
   font-weight: bold;
   letter-spacing: 4px;
+  border: 3px solid #9d5f5f;
+  padding: 5px;
+  cursor: pointer;
 }
 
 .btn:disabled {
@@ -57,7 +65,7 @@ span.cell {
 }
 
 .btn:hover {
-  font-size: 2.6rem;
+  box-shadow: -1px -1px 6px 1px #746969;
 }
 
 #controls div {
@@ -71,12 +79,8 @@ span.cell {
   font-size: 1.1rem;
 }
 
-#info span {
-  margin-right: 3px;
-}
-
-#label_real_time + span {
-  margin-left: 10px;
+#label_real_time+span {
+  margin: 0 2px;
 }
 
 

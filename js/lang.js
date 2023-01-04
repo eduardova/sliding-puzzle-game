@@ -14,22 +14,22 @@
       pause.innerText = 'pausar';
       exit.innerText = 'volver';
       congat.innerHTML = 'Felicidades!';
-      title.innerText = 'Juego';
-      movments.innerText = 'Movimientos';
-      time.innerText = 'Tiempo';
+      title.innerText = 'Juego de puzzle';
+      movments.innerText = 'movimientos: ';
+      time.innerText = 'tiempo: ';
       for (let i = 2; i <= 8; i++)
-      document.getElementById(`label_restart_${i}`).innerText = `Reiniciar (${i}x${i})`;
+      document.getElementById(`label_restart_${i}`).innerText = `iniciar (${i}x${i})`;
       break;
     }
     case 'en': {
       pause.innerText = 'pause';
-      exit.innerText = 'Back';
+      exit.innerText = 'back';
       congat.innerHTML = 'Congratulations!';
-      title.innerText = 'Game';
-      movments.innerText = 'Momvemts';
-      time.innerText = 'Time';
+      title.innerText = 'sliding puzzle game';
+      movments.innerText = 'movements: ';
+      time.innerText = 'time: ';
       for (let i = 2; i <= 8; i++)
-        document.getElementById(`label_restart_${i}`).innerText = `Restart (${i}x${i})`;
+        document.getElementById(`label_restart_${i}`).innerText = `start (${i}x${i})`;
       break;
     }
   }
